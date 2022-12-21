@@ -119,11 +119,11 @@ public class Task1 {
         Book book3 = new Book("Энциклопедия", "Новиков");
 
         reader.takeBook(3);
-        reader.takeBook(new String[]{"Приключения", "Словарь", "Энциклопедия"});
-        reader.takeBook(new Book[]{book1, book2, book3});
+        reader.takeBook("Приключения", "Словарь", "Энциклопедия");
+        reader.takeBook(book1, book2, book3);
 
         reader.returnBook(3);
-        reader.returnBook(new String[]{"Приключения", "Словарь", "Энциклопедия"});
-        reader.returnBook(new Book[]{book1, book2, book3});
+        reader.returnBook("Приключения", "Словарь", "Энциклопедия");
+        reader.returnBook(book1, book2, book3);
     }
 }
